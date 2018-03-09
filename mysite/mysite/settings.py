@@ -126,3 +126,9 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'static/')
 )
 LOGIN_REDIRECT_URL='/blog/' #if you loginin success,redirect to the url  @Leoncf
+EMAIL_HOST='smtp.qq.com'
+EMAIL_HOST_USER="1037299165@qq.com"
+EMAIL_HOST_PASSWORD="mvfpgghgqcaebddh"
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+DEFAULT_FROM_EMAIL="1037299165@qq.com"

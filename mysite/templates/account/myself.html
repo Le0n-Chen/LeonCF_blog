@@ -41,9 +41,19 @@
                 <div class="col-md-4 text-right"><span>个人介绍：</span></div>
                 <div class="col-md-8 text-left">{{userinfo.aboutme}}</div>
             </div>
+            <a href="{% url 'account:edit_my_information' %}"><button class="btn btn-primary btn-md" id="edit_button">编辑</button></a>
         </div>
         <div class="col-md-6">
-        <p>picture</p>
+        {% load static %}
+            <div style="">
+                {% if userinfo.photo %}
+                <img src="{{ userinfo.photo | striptags }}" class="img-circle" width="270px" id="my_photo" name="user_face">
+                {% else %}
+                <img name="user_face" src="{% static 'images/newton.jpg' %}" class="img-circle" id="my_photo">
+                {% endif %}
+            </div>
+            <div style=""><button class="btn btn-primary btn-lg" id="upload_image" onclick="upload_image_layer()">上传头像</button>
+            </div>
         </div>
     </div>
     

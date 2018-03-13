@@ -1,0 +1,93 @@
+ul{
+	list-style: none;
+	padding: 0;
+
+}
+body{
+	
+}
+html{ font-size:62.5%;}
+.navbar{
+	margin-bottom: 0px;
+}
+.navbar-inverse input[type="text"]{
+	background: #313131;
+	border: none;
+	color: #999;
+}
+.navbar-inverse .navbar-form{
+	position: relative;
+}
+.navbar-inverse button[type="submit"]{
+	position: absolute;
+	top: 30%;
+	right: 20px;
+	background: none;
+	border: none;
+}
+.navbar-inverse .glyphicon{
+	color: #999;
+}
+.profile{
+	margin-right: 2px;
+}
+
+#banner{background: url("../img/banner.jpg") no-repeat;background-size: 100% 100%;height: 30rem;margin-top: 0px;display:flex;align-items:center;}
+#banner section{text-align: center;text-transform: uppercase;font-size: 3rem;font-weight: bolder;color: #fff;}
+#banner section span{text-align: center;display: block;text-transform: uppercase}
+#banner section h2{font-weight: bolder;font-size: 3rem;}
+
+#new_project{
+	text-align: center;
+	background: #f5f5f5;
+	padding-bottom: 5rem;
+	padding-top:5rem;
+}
+#new_project .project{
+	cursor: pointer;
+}
+#new_project .project header{
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#new_project .project p{
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+#new_project .project span{
+	font-size: 5rem;
+	display: block;
+}
+.more_btn{
+	margin-top: 5rem;
+	width: 20rem;
+}
+.copyright{
+    text-align: center;
+    
+    background: #000;
+    }
+.copyright p{
+	font-size: 1rem;
+    color: #A6A6A6FF;
+    line-height: 2rem;
+    margin-bottom: 0px;
+}
+#edit_button{
+
+}
+
+@media(min-width: 768px){
+	.navbar-inverse button[type="submit"]{
+		top: 20%;
+
+	}
+	
+}
+@media(max-width: 992px){
+	.me-left{text-align: center;}
+}
+@media(min-width: 992px){
+	.md-left{text-align: left;}
+}
